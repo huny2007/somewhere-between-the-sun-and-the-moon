@@ -1,0 +1,312 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Somewhere Between the Sun and the Moon</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="floating-flower">✿</div>
+  
+<!-- MUSIC PLAYER -->
+<audio id="background-music" loop>
+    <source src="audio/theme.mp3" type="audio/mpeg">
+</audio>
+
+<header class="site-header">
+    <a href="#home" class="logo">S. B. S. M.</a>
+
+    <nav>
+        <a href="#introduction">A little note</a>
+        <a href="#poetry">Poetry</a>
+        <a href="#letters">Letters</a>
+    </nav>
+
+    <div class="music-player">
+        <button id="music-toggle" class="music-button">
+            ♫ Play music
+        </button>
+
+        <div class="volume-control">
+            <span>♪</span>
+            <input
+                type="range"
+                id="music-volume"
+                min="0"
+                max="1"
+                step="0.01"
+                value="0.5"
+                aria-label="Music volume"
+            >
+        </div>
+    </div>
+</header>
+
+
+
+    <main>
+
+        <!-- CHAPTER 01: HOMEPAGE -->
+        <section id="home" class="hero">
+
+            <p class="eyebrow">A COLLECTION OF LITTLE THINGS</p>
+
+            <h1>
+                Somewhere between
+                <span>the sun and the moon.</span>
+            </h1>
+
+            <p class="hero-description">
+                A little collection of words, memories
+                and things left unsaid.
+            </p>
+
+            <div class="polaroid">
+                <div class="photo-placeholder">
+                    <img src="images/main-photo.jpg" alt="A photograph worth keeping">
+                </div>
+
+                <p class="photo-caption">
+                    A moment worth keeping ♡
+                </p>
+            </div>
+
+            <a href="#introduction" class="discover-link">
+                Take a little look ↓
+            </a>
+
+        </section>
+
+
+        <!-- CHAPTER 02: INTRODUCTION -->
+        <section id="introduction" class="introduction section">
+
+            <p class="eyebrow">CHAPTER 01 · THE BEGINNING</p>
+
+            <h2>A little something, just because.</h2>
+
+            <p>
+                This space is a collection of thoughts,
+                words, memories and feelings that deserved
+                somewhere to live.
+            </p>
+
+            <p>
+                Some things are easier to write than to say.
+                So, here they are.
+            </p>
+
+            <span class="sunflower-detail">✿</span>
+
+        </section>
+
+
+        <!-- CHAPTER 03: POETRY -->
+        <section id="poetry" class="poetry section">
+
+            <p class="eyebrow">CHAPTER 02 · WORDS</p>
+
+            <h2>The poetry garden.</h2>
+
+            <p class="section-description">
+                A few words, each with a story of its own.
+            </p>
+
+            <div class="poem-grid">
+
+                <article class="poem-card">
+                    <span>01</span>
+                    <h3>The Things I Didn't See</h3>
+                    <p>A little description...</p>
+                    <button class="read-poem"
+                        data-poem="poem-one">
+                        Read poem ↗
+                    </button>
+                </article>
+
+                <article class="poem-card">
+                    <span>02</span>
+                    <h3>In the Margins</h3>
+                    <p>A little description...</p>
+                    <button class="read-poem"
+                        data-poem="poem-two">
+                        Read poem ↗
+                    </button>
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- CHAPTER 04: CHAAND -->
+
+
+<section id="quiz" class="quiz-section section">
+
+    <p class="eyebrow">A LITTLE CLASSROOM ENTERTAINMENT</p>
+
+    <h2>The Classroom Challenge</h2>
+
+    <p class="quiz-intro">
+        Think you know your way around a classroom?
+        Let's find out.
+    </p>
+
+    <div class="quiz-container">
+
+        <div id="quiz-welcome">
+            <div class="quiz-icon">✎</div>
+            <h3>Ready, class?</h3>
+            <p>Five questions. Four options each. One chance to prove yourself.</p>
+            <button id="start-quiz">Start the quiz</button>
+        </div>
+
+        <div id="quiz-game" style="display: none;">
+            <p id="quiz-progress"></p>
+            <h3 id="quiz-question"></h3>
+            <div id="quiz-options"></div>
+            <p id="quiz-feedback"></p>
+            <button id="next-question" style="display: none;">Next question</button>
+        </div>
+
+        <div id="quiz-result" style="display: none;">
+            <h3>Quiz complete!</h3>
+            <p id="quiz-score"></p>
+            <p id="quiz-message"></p>
+            <button id="restart-quiz">Play again</button>
+        </div>
+
+    </div>
+
+</section>
+
+      
+<section id="chaand" class="chaand section">
+
+    <p class="eyebrow">A LITTLE NAME, A LITTLE WORLD</p>
+
+    <div class="chaand-moon">☾</div>
+
+    <h2>To be called Chaand.</h2>
+
+    <p class="chaand-text">
+        Some names are given casually.
+        Others stay with you.
+
+        Chaand was one of those names.
+        A little word she used for the students
+        she held especially close.
+
+        Perhaps she never realised
+        how much affection could be tucked
+        into something so simple.
+    </p>
+
+    <p class="chaand-ending">
+        And perhaps, being someone's chaand
+        is simply another way of being reminded
+        that you mattered.
+    </p>
+
+    <span class="chaand-stars">✧ &nbsp; ✦ &nbsp; ✧</span>
+
+</section>
+
+
+
+        <!-- CHAPTER 05: LETTERS -->
+        <section id="letters" class="letters section">
+
+<div class="letter-flower">✿</div>
+
+            <p class="eyebrow">CHAPTER 04 · UNSENT WORDS</p>
+
+            <h2>Some things needed saying.</h2>
+
+            <div class="letter-grid">
+
+                <button class="letter-card"
+                    data-letter="apology">
+                    <span>✉</span>
+                    <h3>An apology</h3>
+                    <p>For the things I wish I had done differently.</p>
+                    <small>Open letter ↗</small>
+                </button>
+
+                <button class="letter-card"
+                    data-letter="gratitude">
+                    <span>✉</span>
+                    <h3>A thank you</h3>
+                    <p>For everything that deserves appreciation.</p>
+                    <small>Open letter ↗</small>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- CHAPTER 06: ENDING -->
+        <section id="ending" class="ending section">
+
+<div class="final-dedication">
+    <span>✿</span>
+    <p>For everything you helped me see,</p>
+    <p>and everything I am still learning to become.</p>
+    <small>With gratitude, always.</small>
+</div>
+
+            <p class="eyebrow">UNTIL THE NEXT CHAPTER</p>
+
+            <h2>And that's that.</h2>
+
+            <p>
+                Some things are too meaningful
+                to leave unsaid.
+            </p>
+
+            <span class="sunflower-detail">✿</span>
+
+            <footer>
+                Made with care, and a little bit of sunshine.
+            </footer>
+
+        </section>
+
+    </main>
+
+
+    <!-- POEM AND LETTER READING WINDOW -->
+    <div id="reading-window" class="reading-window hidden">
+
+        <div class="reading-content">
+
+            <button id="close-reading" class="close-button">
+                ✕
+            </button>
+
+            <p id="reading-label" class="eyebrow"></p>
+
+            <h2 id="reading-title"></h2>
+
+            <div id="reading-text"></div>
+
+        </div>
+
+    </div>
+
+<button id="back-to-top" aria-label="Back to top">
+    ↑
+</button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
